@@ -1554,7 +1554,6 @@ if __name__ == "__main__":
     # Assuming that we are on a CUDA machine, this should print a CUDA device:
     logger.info(device)
     args = add_fit_args(argparse.ArgumentParser(description='Probabilistic Federated CNN Matching'))
-    
 #================================================================================
 #Set seed and pruning rate here
 #===================================================================================
@@ -1563,6 +1562,7 @@ if __name__ == "__main__":
 #================================================================================
 #Set seed and pruning finish
 #===================================================================================
+
 
     print("args",args)
     seed = args.seed
