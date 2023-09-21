@@ -1,0 +1,1959 @@
+Script started on 2023-09-21 08:37:48+08:00 [TERM="screen" TTY="/dev/pts/4" COLUMNS="189" LINES="49"]
+./run.sh+--------------------------------------------------AutoDL--------------------------------------------------------+
+[32m目录说明:[0m
+╔═════════════════╦════════╦════╦═════════════════════════════════════════════════════════════════════════╗
+║目录             ║名称    ║速度║说明                                                                     ║
+╠═════════════════╬════════╬════╬═════════════════════════════════════════════════════════════════════════╣
+║/                ║系 统 盘║一般║实例关机数据不会丢失，可存放代码等。会随保存镜像一起保存。               ║
+║/root/autodl-tmp ║数 据 盘║ 快 ║实例关机数据不会丢失，可存放读写IO要求高的数据。但不会随保存镜像一起保存 ║
+╚═════════════════╩════════╩════╩═════════════════════════════════════════════════════════════════════════╝
+[32mCPU[0m ：12 核心
+[32m内存[0m：90 GB
+[32mGPU [0m：NVIDIA GeForce RTX 4090, 1
+[32m存储[0m：
+[32m  系 统 盘/               [0m：71% 22G/30G
+[32m  数 据 盘/root/autodl-tmp[0m：12% 6.0G/50G
++----------------------------------------------------------------------------------------------------------------+
+[31m*注意: [0m
+[31m1.系统盘较小请将大的数据存放于数据盘或网盘中，重置系统时数据盘和网盘中的数据不受影响[0m
+[31m2.清理系统盘请参考：https://www.autodl.com/docs/qa/[0m
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ./run.sh
+INFO:root:cuda:0
+INFO:root:Partitioning data
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:averaging_weights: [[1.082e-01 4.260e-02 6.800e-03 3.580e-02 2.600e-03 1.980e-02 4.000e-03
+  7.400e-03 2.140e-02 3.780e-02]
+ [1.800e-03 6.000e-04 1.840e-02 4.000e-03 8.760e-02 3.164e-01 5.800e-03
+  2.316e-01 0.000e+00 0.000e+00]
+ [1.000e-03 2.380e-02 1.280e-02 9.220e-02 8.620e-02 1.506e-01 4.160e-02
+  2.000e-04 1.400e-03 1.800e-03]
+ [4.500e-02 2.960e-02 2.870e-01 1.000e-03 5.400e-03 2.170e-01 2.200e-03
+  2.240e-02 3.400e-02 0.000e+00]
+ [5.720e-02 1.538e-01 6.400e-02 6.840e-02 1.710e-01 4.680e-02 2.000e-04
+  6.020e-02 1.600e-03 5.600e-03]
+ [1.434e-01 1.300e-02 8.000e-04 1.816e-01 2.602e-01 7.000e-03 6.800e-03
+  4.000e-03 1.572e-01 0.000e+00]
+ [1.000e-03 3.200e-03 5.740e-02 1.880e-02 1.228e-01 6.400e-03 1.612e-01
+  0.000e+00 5.720e-02 3.578e-01]
+ [8.200e-02 2.092e-01 1.322e-01 2.004e-01 1.800e-03 0.000e+00 0.000e+00
+  0.000e+00 0.000e+00 0.000e+00]
+ [1.280e-01 2.280e-02 1.240e-02 1.420e-02 6.180e-02 9.400e-03 1.106e-01
+  1.542e-01 1.068e-01 3.080e-02]
+ [4.000e-04 4.000e-04 2.124e-01 1.220e-02 2.560e-02 5.780e-02 2.028e-01
+  1.704e-01 0.000e+00 0.000e+00]
+ [1.318e-01 7.100e-02 5.560e-02 1.138e-01 1.420e-02 7.240e-02 2.740e-02
+  1.304e-01 8.680e-02 0.000e+00]
+ [5.880e-02 5.660e-02 3.740e-02 1.860e-02 0.000e+00 4.780e-02 2.600e-02
+  1.650e-01 1.574e-01 1.634e-01]
+ [5.240e-02 1.492e-01 3.600e-03 2.080e-02 1.800e-03 0.000e+00 6.300e-02
+  2.200e-03 1.800e-03 2.220e-02]
+ [5.580e-02 5.320e-02 1.540e-02 6.600e-03 2.600e-03 4.460e-02 1.668e-01
+  4.720e-02 1.770e-01 6.900e-02]
+ [1.020e-01 3.800e-03 4.200e-03 1.902e-01 5.400e-03 1.600e-03 9.860e-02
+  4.400e-03 1.926e-01 2.930e-01]
+ [3.120e-02 1.672e-01 7.960e-02 2.140e-02 1.510e-01 2.400e-03 8.300e-02
+  4.000e-04 4.800e-03 1.860e-02]]
+INFO:root:Initializing nets
+INFO:root:Retrain? : True
+INFO:root:Training network 0. n_training: 1432
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 0
+INFO:root:n_training: 23
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.14874301675977653
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 2.209602
+INFO:root:Epoch: 1 Loss: 2.006323
+INFO:root:Epoch: 2 Loss: 1.897348
+INFO:root:Epoch: 3 Loss: 1.856885
+INFO:root:Epoch: 4 Loss: 1.827956
+INFO:root:Epoch: 5 Loss: 1.807425
+INFO:root:Epoch: 6 Loss: 1.784327
+INFO:root:Epoch: 7 Loss: 1.718935
+INFO:root:Epoch: 8 Loss: 1.686639
+INFO:root:Epoch: 9 Loss: 1.662286
+INFO:root:Epoch: 10 Loss: 1.624334
+INFO:root:Epoch: 11 Loss: 1.625300
+INFO:root:Epoch: 12 Loss: 1.634948
+INFO:root:Epoch: 13 Loss: 1.605986
+INFO:root:Epoch: 14 Loss: 1.612077
+INFO:root:Epoch: 15 Loss: 1.633308
+INFO:root:Epoch: 16 Loss: 1.662414
+INFO:root:Epoch: 17 Loss: 1.600190
+INFO:root:Epoch: 18 Loss: 1.589859
+INFO:root:Epoch: 19 Loss: 1.529329
+INFO:root:>> Training accuracy: 0.472765
+INFO:root:>> Test accuracy: 0.217700
+INFO:root: ** Training complete **
+INFO:root:saving local model-0
+INFO:root:Training network 1. n_training: 3331
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 1
+INFO:root:n_training: 53
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.0
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 1.753298
+INFO:root:Epoch: 1 Loss: 1.220915
+INFO:root:Epoch: 2 Loss: 1.187669
+INFO:root:Epoch: 3 Loss: 1.177508
+INFO:root:Epoch: 4 Loss: 1.164378
+INFO:root:Epoch: 5 Loss: 1.130475
+INFO:root:Epoch: 6 Loss: 1.095178
+INFO:root:Epoch: 7 Loss: 1.070721
+INFO:root:Epoch: 8 Loss: 1.080118
+INFO:root:Epoch: 9 Loss: 1.089158
+INFO:root:Epoch: 10 Loss: 1.030878
+INFO:root:Epoch: 11 Loss: 1.029921
+INFO:root:Epoch: 12 Loss: 0.981503
+INFO:root:Epoch: 13 Loss: 0.980007
+INFO:root:Epoch: 14 Loss: 0.957225
+INFO:root:Epoch: 15 Loss: 0.948842
+INFO:root:Epoch: 16 Loss: 0.919567
+INFO:root:Epoch: 17 Loss: 0.905343
+INFO:root:Epoch: 18 Loss: 0.959855
+INFO:root:Epoch: 19 Loss: 0.888781
+INFO:root:>> Training accuracy: 0.684479
+INFO:root:>> Test accuracy: 0.179400
+INFO:root: ** Training complete **
+INFO:root:saving local model-1
+INFO:root:Training network 2. n_training: 2058
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 2
+INFO:root:n_training: 33
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.1010689990281827
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 2.145199
+INFO:root:Epoch: 1 Loss: 1.746678
+INFO:root:Epoch: 2 Loss: 1.619683
+INFO:root:Epoch: 3 Loss: 1.598652
+INFO:root:Epoch: 4 Loss: 1.592304
+INFO:root:Epoch: 5 Loss: 1.589501
+INFO:root:Epoch: 6 Loss: 1.587515
+INFO:root:Epoch: 7 Loss: 1.560796
+INFO:root:Epoch: 8 Loss: 1.572652
+INFO:root:Epoch: 9 Loss: 1.536675
+INFO:root:Epoch: 10 Loss: 1.496471
+INFO:root:Epoch: 11 Loss: 1.479267
+INFO:root:Epoch: 12 Loss: 1.482042
+INFO:root:Epoch: 13 Loss: 1.484236
+INFO:root:Epoch: 14 Loss: 1.470529
+INFO:root:Epoch: 15 Loss: 1.470847
+INFO:root:Epoch: 16 Loss: 1.479261
+INFO:root:Epoch: 17 Loss: 1.413867
+INFO:root:Epoch: 18 Loss: 1.412450
+INFO:root:Epoch: 19 Loss: 1.435651
+INFO:root:>> Training accuracy: 0.455296
+INFO:root:>> Test accuracy: 0.150600
+INFO:root: ** Training complete **
+INFO:root:saving local model-2
+INFO:root:Training network 3. n_training: 3218
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 3
+INFO:root:n_training: 51
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.3371659415786203
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 1.883107
+INFO:root:Epoch: 1 Loss: 1.454093
+INFO:root:Epoch: 2 Loss: 1.416863
+INFO:root:Epoch: 3 Loss: 1.401356
+INFO:root:Epoch: 4 Loss: 1.393981
+INFO:root:Epoch: 5 Loss: 1.360319
+INFO:root:Epoch: 6 Loss: 1.333916
+INFO:root:Epoch: 7 Loss: 1.295652
+INFO:root:Epoch: 8 Loss: 1.262615
+INFO:root:Epoch: 9 Loss: 1.227830
+INFO:root:Epoch: 10 Loss: 1.200963
+INFO:root:Epoch: 11 Loss: 1.183323
+INFO:root:Epoch: 12 Loss: 1.147962
+INFO:root:Epoch: 13 Loss: 1.078002
+INFO:root:Epoch: 14 Loss: 1.027731
+INFO:root:Epoch: 15 Loss: 1.033727
+INFO:root:Epoch: 16 Loss: 1.004937
+INFO:root:Epoch: 17 Loss: 1.029007
+INFO:root:Epoch: 18 Loss: 0.969128
+INFO:root:Epoch: 19 Loss: 0.965574
+INFO:root:>> Training accuracy: 0.631448
+INFO:root:>> Test accuracy: 0.249800
+INFO:root: ** Training complete **
+INFO:root:saving local model-3
+INFO:root:Training network 4. n_training: 3144
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 4
+INFO:root:n_training: 50
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.008905852417302799
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 2.168538
+INFO:root:Epoch: 1 Loss: 1.964262
+INFO:root:Epoch: 2 Loss: 1.899798
+INFO:root:Epoch: 3 Loss: 1.875782
+INFO:root:Epoch: 4 Loss: 1.861588
+INFO:root:Epoch: 5 Loss: 1.808860
+INFO:root:Epoch: 6 Loss: 1.668302
+INFO:root:Epoch: 7 Loss: 1.563727
+INFO:root:Epoch: 8 Loss: 1.544383
+INFO:root:Epoch: 9 Loss: 1.478348
+INFO:root:Epoch: 10 Loss: 1.502503
+INFO:root:Epoch: 11 Loss: 1.456187
+INFO:root:Epoch: 12 Loss: 1.465480
+INFO:root:Epoch: 13 Loss: 1.400164
+INFO:root:Epoch: 14 Loss: 1.437199
+INFO:root:Epoch: 15 Loss: 1.396996
+INFO:root:Epoch: 16 Loss: 1.476753
+INFO:root:Epoch: 17 Loss: 1.355292
+INFO:root:Epoch: 18 Loss: 1.347794
+INFO:root:Epoch: 19 Loss: 1.360775
+INFO:root:>> Training accuracy: 0.494275
+INFO:root:>> Test accuracy: 0.217400
+INFO:root: ** Training complete **
+INFO:root:saving local model-4
+INFO:root:Training network 5. n_training: 3870
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 5
+INFO:root:n_training: 61
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.02248062015503876
+INFO:root:>> Pre-Training Test accuracy: 0.0937
+INFO:root:Epoch: 0 Loss: 1.967427
+INFO:root:Epoch: 1 Loss: 1.550988
+INFO:root:Epoch: 2 Loss: 1.542713
+INFO:root:Epoch: 3 Loss: 1.534015
+INFO:root:Epoch: 4 Loss: 1.381813
+INFO:root:Epoch: 5 Loss: 1.250823
+INFO:root:Epoch: 6 Loss: 1.223304
+INFO:root:Epoch: 7 Loss: 1.161255
+INFO:root:Epoch: 8 Loss: 1.131348
+INFO:root:Epoch: 9 Loss: 1.152373
+INFO:root:Epoch: 10 Loss: 1.089027
+INFO:root:Epoch: 11 Loss: 1.078615
+INFO:root:Epoch: 12 Loss: 1.036693
+INFO:root:Epoch: 13 Loss: 1.014681
+INFO:root:Epoch: 14 Loss: 1.028444
+INFO:root:Epoch: 15 Loss: 0.972394
+INFO:root:Epoch: 16 Loss: 0.967726
+INFO:root:Epoch: 17 Loss: 0.961008
+INFO:root:Epoch: 18 Loss: 0.922132
+INFO:root:Epoch: 19 Loss: 0.927396
+INFO:root:>> Training accuracy: 0.639535
+INFO:root:>> Test accuracy: 0.247300
+INFO:root: ** Training complete **
+INFO:root:saving local model-5
+INFO:root:Training network 6. n_training: 3929
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 6
+INFO:root:n_training: 62
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.0239246627640621
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 1.904092
+INFO:root:Epoch: 1 Loss: 1.536196
+INFO:root:Epoch: 2 Loss: 1.453628
+INFO:root:Epoch: 3 Loss: 1.306885
+INFO:root:Epoch: 4 Loss: 1.186455
+INFO:root:Epoch: 5 Loss: 1.169562
+INFO:root:Epoch: 6 Loss: 1.130160
+INFO:root:Epoch: 7 Loss: 1.095379
+INFO:root:Epoch: 8 Loss: 1.049273
+INFO:root:Epoch: 9 Loss: 1.042320
+INFO:root:Epoch: 10 Loss: 1.009352
+INFO:root:Epoch: 11 Loss: 0.975254
+INFO:root:Epoch: 12 Loss: 0.978873
+INFO:root:Epoch: 13 Loss: 0.930574
+INFO:root:Epoch: 14 Loss: 0.921285
+INFO:root:Epoch: 15 Loss: 0.875598
+INFO:root:Epoch: 16 Loss: 0.854100
+INFO:root:Epoch: 17 Loss: 0.831256
+INFO:root:Epoch: 18 Loss: 0.797532
+INFO:root:Epoch: 19 Loss: 0.805785
+INFO:root:>> Training accuracy: 0.706541
+INFO:root:>> Test accuracy: 0.259800
+INFO:root: ** Training complete **
+INFO:root:saving local model-6
+INFO:root:Training network 7. n_training: 3128
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 7
+INFO:root:n_training: 49
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.0
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 1.982902
+INFO:root:Epoch: 1 Loss: 1.392277
+INFO:root:Epoch: 2 Loss: 1.317875
+INFO:root:Epoch: 3 Loss: 1.256517
+INFO:root:Epoch: 4 Loss: 1.163001
+INFO:root:Epoch: 5 Loss: 1.018785
+INFO:root:Epoch: 6 Loss: 0.953575
+INFO:root:Epoch: 7 Loss: 0.923173
+INFO:root:Epoch: 8 Loss: 0.896007
+INFO:root:Epoch: 9 Loss: 0.828522
+INFO:root:Epoch: 10 Loss: 0.806802
+INFO:root:Epoch: 11 Loss: 0.790708
+INFO:root:Epoch: 12 Loss: 0.738007
+INFO:root:Epoch: 13 Loss: 0.732991
+INFO:root:Epoch: 14 Loss: 0.702618
+INFO:root:Epoch: 15 Loss: 0.669406
+INFO:root:Epoch: 16 Loss: 0.711667
+INFO:root:Epoch: 17 Loss: 0.626406
+INFO:root:Epoch: 18 Loss: 0.639213
+INFO:root:Epoch: 19 Loss: 0.626565
+INFO:root:>> Training accuracy: 0.750000
+INFO:root:>> Test accuracy: 0.285800
+INFO:root: ** Training complete **
+INFO:root:saving local model-7
+INFO:root:Training network 8. n_training: 3255
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 8
+INFO:root:n_training: 51
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.1640552995391705
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 2.184224
+INFO:root:Epoch: 1 Loss: 2.003054
+INFO:root:Epoch: 2 Loss: 1.959012
+INFO:root:Epoch: 3 Loss: 1.872480
+INFO:root:Epoch: 4 Loss: 1.730738
+INFO:root:Epoch: 5 Loss: 1.675989
+INFO:root:Epoch: 6 Loss: 1.638588
+INFO:root:Epoch: 7 Loss: 1.630315
+INFO:root:Epoch: 8 Loss: 1.599988
+INFO:root:Epoch: 9 Loss: 1.581118
+INFO:root:Epoch: 10 Loss: 1.573828
+INFO:root:Epoch: 11 Loss: 1.532594
+INFO:root:Epoch: 12 Loss: 1.508344
+INFO:root:Epoch: 13 Loss: 1.488864
+INFO:root:Epoch: 14 Loss: 1.426983
+INFO:root:Epoch: 15 Loss: 1.449289
+INFO:root:Epoch: 16 Loss: 1.370194
+INFO:root:Epoch: 17 Loss: 1.321998
+INFO:root:Epoch: 18 Loss: 1.315087
+INFO:root:Epoch: 19 Loss: 1.287064
+INFO:root:>> Training accuracy: 0.568356
+INFO:root:>> Test accuracy: 0.306000
+INFO:root: ** Training complete **
+INFO:root:saving local model-8
+INFO:root:Training network 9. n_training: 3410
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 9
+INFO:root:n_training: 54
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.08475073313782991
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 1.988925
+INFO:root:Epoch: 1 Loss: 1.532515
+INFO:root:Epoch: 2 Loss: 1.494045
+INFO:root:Epoch: 3 Loss: 1.480390
+INFO:root:Epoch: 4 Loss: 1.446016
+INFO:root:Epoch: 5 Loss: 1.366188
+INFO:root:Epoch: 6 Loss: 1.341747
+INFO:root:Epoch: 7 Loss: 1.310373
+INFO:root:Epoch: 8 Loss: 1.283030
+INFO:root:Epoch: 9 Loss: 1.264318
+INFO:root:Epoch: 10 Loss: 1.219201
+INFO:root:Epoch: 11 Loss: 1.203890
+INFO:root:Epoch: 12 Loss: 1.144750
+INFO:root:Epoch: 13 Loss: 1.145298
+INFO:root:Epoch: 14 Loss: 1.118052
+INFO:root:Epoch: 15 Loss: 1.083271
+INFO:root:Epoch: 16 Loss: 1.073989
+INFO:root:Epoch: 17 Loss: 1.050811
+INFO:root:Epoch: 18 Loss: 1.006928
+INFO:root:Epoch: 19 Loss: 1.035423
+INFO:root:>> Training accuracy: 0.644282
+INFO:root:>> Test accuracy: 0.239300
+INFO:root: ** Training complete **
+INFO:root:saving local model-9
+INFO:root:Training network 10. n_training: 3517
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 10
+INFO:root:n_training: 55
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.10292863235712255
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 2.221449
+INFO:root:Epoch: 1 Loss: 2.106140
+INFO:root:Epoch: 2 Loss: 2.068541
+INFO:root:Epoch: 3 Loss: 2.047044
+INFO:root:Epoch: 4 Loss: 1.969106
+INFO:root:Epoch: 5 Loss: 1.892952
+INFO:root:Epoch: 6 Loss: 1.811553
+INFO:root:Epoch: 7 Loss: 1.752707
+INFO:root:Epoch: 8 Loss: 1.683771
+INFO:root:Epoch: 9 Loss: 1.651275
+INFO:root:Epoch: 10 Loss: 1.618740
+INFO:root:Epoch: 11 Loss: 1.596478
+INFO:root:Epoch: 12 Loss: 1.558598
+INFO:root:Epoch: 13 Loss: 1.535902
+INFO:root:Epoch: 14 Loss: 1.496008
+INFO:root:Epoch: 15 Loss: 1.457502
+INFO:root:Epoch: 16 Loss: 1.437311
+INFO:root:Epoch: 17 Loss: 1.451650
+INFO:root:Epoch: 18 Loss: 1.379432
+INFO:root:Epoch: 19 Loss: 1.360168
+INFO:root:>> Training accuracy: 0.484504
+INFO:root:>> Test accuracy: 0.333800
+INFO:root: ** Training complete **
+INFO:root:saving local model-10
+INFO:root:Training network 11. n_training: 3655
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 11
+INFO:root:n_training: 58
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.21532147742818059
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 2.155042
+INFO:root:Epoch: 1 Loss: 1.978394
+INFO:root:Epoch: 2 Loss: 1.953656
+INFO:root:Epoch: 3 Loss: 1.931539
+INFO:root:Epoch: 4 Loss: 1.848960
+INFO:root:Epoch: 5 Loss: 1.749776
+INFO:root:Epoch: 6 Loss: 1.701020
+INFO:root:Epoch: 7 Loss: 1.649883
+INFO:root:Epoch: 8 Loss: 1.600738
+INFO:root:Epoch: 9 Loss: 1.512729
+INFO:root:Epoch: 10 Loss: 1.431665
+INFO:root:Epoch: 11 Loss: 1.362954
+INFO:root:Epoch: 12 Loss: 1.328392
+INFO:root:Epoch: 13 Loss: 1.290308
+INFO:root:Epoch: 14 Loss: 1.263701
+INFO:root:Epoch: 15 Loss: 1.216334
+INFO:root:Epoch: 16 Loss: 1.219023
+INFO:root:Epoch: 17 Loss: 1.155552
+INFO:root:Epoch: 18 Loss: 1.172069
+INFO:root:Epoch: 19 Loss: 1.109033
+INFO:root:>> Training accuracy: 0.614501
+INFO:root:>> Test accuracy: 0.337000
+INFO:root: ** Training complete **
+INFO:root:saving local model-11
+INFO:root:Training network 12. n_training: 1585
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 12
+INFO:root:n_training: 25
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.07003154574132492
+INFO:root:>> Pre-Training Test accuracy: 0.0996
+INFO:root:Epoch: 0 Loss: 2.151958
+INFO:root:Epoch: 1 Loss: 1.765479
+INFO:root:Epoch: 2 Loss: 1.577108
+INFO:root:Epoch: 3 Loss: 1.509671
+INFO:root:Epoch: 4 Loss: 1.488761
+INFO:root:Epoch: 5 Loss: 1.480138
+INFO:root:Epoch: 6 Loss: 1.470390
+INFO:root:Epoch: 7 Loss: 1.443680
+INFO:root:Epoch: 8 Loss: 1.373386
+INFO:root:Epoch: 9 Loss: 1.288645
+INFO:root:Epoch: 10 Loss: 1.250447
+INFO:root:Epoch: 11 Loss: 1.221267
+INFO:root:Epoch: 12 Loss: 1.205649
+INFO:root:Epoch: 13 Loss: 1.140482
+INFO:root:Epoch: 14 Loss: 1.086337
+INFO:root:Epoch: 15 Loss: 1.127496
+INFO:root:Epoch: 16 Loss: 1.104247
+INFO:root:Epoch: 17 Loss: 1.078288
+INFO:root:Epoch: 18 Loss: 1.037744
+INFO:root:Epoch: 19 Loss: 1.033653
+INFO:root:>> Training accuracy: 0.675079
+INFO:root:>> Test accuracy: 0.221000
+INFO:root: ** Training complete **
+INFO:root:saving local model-12
+INFO:root:Training network 13. n_training: 3191
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 13
+INFO:root:n_training: 50
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.010341585709808837
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 2.152488
+INFO:root:Epoch: 1 Loss: 1.955999
+INFO:root:Epoch: 2 Loss: 1.917552
+INFO:root:Epoch: 3 Loss: 1.906199
+INFO:root:Epoch: 4 Loss: 1.841210
+INFO:root:Epoch: 5 Loss: 1.620428
+INFO:root:Epoch: 6 Loss: 1.521168
+INFO:root:Epoch: 7 Loss: 1.458135
+INFO:root:Epoch: 8 Loss: 1.367521
+INFO:root:Epoch: 9 Loss: 1.359856
+INFO:root:Epoch: 10 Loss: 1.302770
+INFO:root:Epoch: 11 Loss: 1.263114
+INFO:root:Epoch: 12 Loss: 1.257702
+INFO:root:Epoch: 13 Loss: 1.251448
+INFO:root:Epoch: 14 Loss: 1.196496
+INFO:root:Epoch: 15 Loss: 1.170391
+INFO:root:Epoch: 16 Loss: 1.140822
+INFO:root:Epoch: 17 Loss: 1.146827
+INFO:root:Epoch: 18 Loss: 1.102197
+INFO:root:Epoch: 19 Loss: 1.078302
+INFO:root:>> Training accuracy: 0.654027
+INFO:root:>> Test accuracy: 0.385000
+INFO:root: ** Training complete **
+INFO:root:saving local model-13
+INFO:root:Training network 14. n_training: 4479
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 14
+INFO:root:n_training: 70
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.21232417950435364
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 1.974860
+INFO:root:Epoch: 1 Loss: 1.649994
+INFO:root:Epoch: 2 Loss: 1.626760
+INFO:root:Epoch: 3 Loss: 1.518738
+INFO:root:Epoch: 4 Loss: 1.395819
+INFO:root:Epoch: 5 Loss: 1.334114
+INFO:root:Epoch: 6 Loss: 1.237449
+INFO:root:Epoch: 7 Loss: 1.178358
+INFO:root:Epoch: 8 Loss: 1.114690
+INFO:root:Epoch: 9 Loss: 1.048540
+INFO:root:Epoch: 10 Loss: 0.983052
+INFO:root:Epoch: 11 Loss: 0.933040
+INFO:root:Epoch: 12 Loss: 1.000743
+INFO:root:Epoch: 13 Loss: 0.885989
+INFO:root:Epoch: 14 Loss: 0.912581
+INFO:root:Epoch: 15 Loss: 0.847956
+INFO:root:Epoch: 16 Loss: 0.851175
+INFO:root:Epoch: 17 Loss: 0.826697
+INFO:root:Epoch: 18 Loss: 0.807178
+INFO:root:Epoch: 19 Loss: 0.774321
+INFO:root:>> Training accuracy: 0.741460
+INFO:root:>> Test accuracy: 0.350500
+INFO:root: ** Training complete **
+INFO:root:saving local model-14
+INFO:root:Training network 15. n_training: 2798
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 15
+INFO:root:n_training: 44
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.03323802716225876
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 2.137616
+INFO:root:Epoch: 1 Loss: 1.826246
+INFO:root:Epoch: 2 Loss: 1.755252
+INFO:root:Epoch: 3 Loss: 1.740450
+INFO:root:Epoch: 4 Loss: 1.718913
+INFO:root:Epoch: 5 Loss: 1.666642
+INFO:root:Epoch: 6 Loss: 1.528594
+INFO:root:Epoch: 7 Loss: 1.430441
+INFO:root:Epoch: 8 Loss: 1.359740
+INFO:root:Epoch: 9 Loss: 1.341162
+INFO:root:Epoch: 10 Loss: 1.303323
+INFO:root:Epoch: 11 Loss: 1.309079
+INFO:root:Epoch: 12 Loss: 1.291130
+INFO:root:Epoch: 13 Loss: 1.277088
+INFO:root:Epoch: 14 Loss: 1.270349
+INFO:root:Epoch: 15 Loss: 1.242709
+INFO:root:Epoch: 16 Loss: 1.221598
+INFO:root:Epoch: 17 Loss: 1.220555
+INFO:root:Epoch: 18 Loss: 1.212539
+INFO:root:Epoch: 19 Loss: 1.165260
+INFO:root:>> Training accuracy: 0.552895
+INFO:root:>> Test accuracy: 0.239600
+INFO:root: ** Training complete **
+INFO:root:saving local model-15
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Computing Uniform ensemble accuracy
+INFO:root:Uniform ensemble (Train acc): 0.4636
+INFO:root:Uniform ensemble (Test acc): 0.4861
+INFO:root:==============================
+INFO:root:Weights shapes: [(32, 27), (32,), (64, 288), (64,), (128, 576), (128,), (128, 1152), (128,), (256, 1152), (256,), (256, 2304), (256,), (4096, 512), (512,), (512, 512), (512,), (512, 10), (10,)]
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+INFO:root:init_channel_kernel_dims: [27, 288, 576, 1152, 1152, 2304, 512, 512, 10]
+INFO:root:Layer index: 1, init_num_kernel: 32
+INFO:root:weights bias: (32, 28)
+INFO:root:sigma_inv_prior shape: (28,)
+INFO:root:mean_prior shape: (28,)
+INFO:root:sigma_inv_layer shape: (28,)
+INFO:root:Number of global neurons is 47, gamma 7.000000
+INFO:root:***************Shape of global weights after match: (47, 28) ******************
+INFO:root:Branch A, Layer index: 1, Global weights out shapes: [(47, 27), (47,)]
+INFO:root:global inv sigma out shape: [(47, 27), (47,)]
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 0, starting from layer: 2
+INFO:root:n_training: 23
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.447626
+INFO:root:>> Pre-Training Test accuracy: 0.207900
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.573476
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.552608
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.556875
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.519266
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.545802
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.485041
+INFO:root:Epoch: 6 Epoch Avg Loss: 1.498733
+INFO:root:Epoch: 7 Epoch Avg Loss: 1.463821
+INFO:root:Epoch: 8 Epoch Avg Loss: 1.439891
+INFO:root:Epoch: 9 Epoch Avg Loss: 1.427467
+INFO:root:>> Training accuracy after local retrain: 0.510475
+INFO:root:>> Test accuracy after local retrain: 0.232100
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 1, starting from layer: 2
+INFO:root:n_training: 53
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.497448
+INFO:root:>> Pre-Training Test accuracy: 0.163700
+INFO:root:Epoch: 0 Epoch Avg Loss: 0.965017
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.846372
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.897026
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.853753
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.879031
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.796720
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.773566
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.778853
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.791454
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.758499
+INFO:root:>> Training accuracy after local retrain: 0.734914
+INFO:root:>> Test accuracy after local retrain: 0.194400
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 2, starting from layer: 2
+INFO:root:n_training: 33
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.219631
+INFO:root:>> Pre-Training Test accuracy: 0.103800
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.499751
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.416624
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.372255
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.381259
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.352814
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.335430
+INFO:root:Epoch: 6 Epoch Avg Loss: 1.339911
+INFO:root:Epoch: 7 Epoch Avg Loss: 1.297510
+INFO:root:Epoch: 8 Epoch Avg Loss: 1.263078
+INFO:root:Epoch: 9 Epoch Avg Loss: 1.269560
+INFO:root:>> Training accuracy after local retrain: 0.482507
+INFO:root:>> Test accuracy after local retrain: 0.213900
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 3, starting from layer: 2
+INFO:root:n_training: 51
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.548167
+INFO:root:>> Pre-Training Test accuracy: 0.167000
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.020797
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.977666
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.967089
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.934351
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.920958
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.921391
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.933042
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.884994
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.885313
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.884210
+INFO:root:>> Training accuracy after local retrain: 0.679615
+INFO:root:>> Test accuracy after local retrain: 0.264300
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 4, starting from layer: 2
+INFO:root:n_training: 50
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.349237
+INFO:root:>> Pre-Training Test accuracy: 0.145300
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.494668
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.388795
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.293577
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.332078
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.322193
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.293111
+INFO:root:Epoch: 6 Epoch Avg Loss: 1.249940
+INFO:root:Epoch: 7 Epoch Avg Loss: 1.196618
+INFO:root:Epoch: 8 Epoch Avg Loss: 1.198738
+INFO:root:Epoch: 9 Epoch Avg Loss: 1.165149
+INFO:root:>> Training accuracy after local retrain: 0.585878
+INFO:root:>> Test accuracy after local retrain: 0.363700
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 5, starting from layer: 2
+INFO:root:n_training: 61
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.556072
+INFO:root:>> Pre-Training Test accuracy: 0.214600
+INFO:root:Epoch: 0 Epoch Avg Loss: 0.933305
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.924632
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.914383
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.907622
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.867145
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.852194
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.843812
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.821081
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.825188
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.791476
+INFO:root:>> Training accuracy after local retrain: 0.713695
+INFO:root:>> Test accuracy after local retrain: 0.302600
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 6, starting from layer: 2
+INFO:root:n_training: 62
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.194197
+INFO:root:>> Pre-Training Test accuracy: 0.121200
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.165371
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.877943
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.840800
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.849462
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.821519
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.832061
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.774022
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.778327
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.734370
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.761283
+INFO:root:>> Training accuracy after local retrain: 0.761517
+INFO:root:>> Test accuracy after local retrain: 0.300500
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 7, starting from layer: 2
+INFO:root:n_training: 49
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.500639
+INFO:root:>> Pre-Training Test accuracy: 0.226900
+INFO:root:Epoch: 0 Epoch Avg Loss: 0.764915
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.636108
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.641775
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.641185
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.597430
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.576822
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.593076
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.585571
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.567365
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.543215
+INFO:root:>> Training accuracy after local retrain: 0.793159
+INFO:root:>> Test accuracy after local retrain: 0.292700
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 8, starting from layer: 2
+INFO:root:n_training: 51
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.453763
+INFO:root:>> Pre-Training Test accuracy: 0.252800
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.324640
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.260098
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.222858
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.228029
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.173172
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.146757
+INFO:root:Epoch: 6 Epoch Avg Loss: 1.140182
+INFO:root:Epoch: 7 Epoch Avg Loss: 1.133603
+INFO:root:Epoch: 8 Epoch Avg Loss: 1.092975
+INFO:root:Epoch: 9 Epoch Avg Loss: 1.088787
+INFO:root:>> Training accuracy after local retrain: 0.572657
+INFO:root:>> Test accuracy after local retrain: 0.378500
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 9, starting from layer: 2
+INFO:root:n_training: 54
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.518182
+INFO:root:>> Pre-Training Test accuracy: 0.191200
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.082884
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.005852
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.984770
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.973410
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.926275
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.917929
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.930110
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.874240
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.846431
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.859818
+INFO:root:>> Training accuracy after local retrain: 0.708798
+INFO:root:>> Test accuracy after local retrain: 0.272100
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 10, starting from layer: 2
+INFO:root:n_training: 55
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.442991
+INFO:root:>> Pre-Training Test accuracy: 0.331000
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.394777
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.377702
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.339508
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.289115
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.272555
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.238589
+INFO:root:Epoch: 6 Epoch Avg Loss: 1.229670
+INFO:root:Epoch: 7 Epoch Avg Loss: 1.200991
+INFO:root:Epoch: 8 Epoch Avg Loss: 1.162971
+INFO:root:Epoch: 9 Epoch Avg Loss: 1.207455
+INFO:root:>> Training accuracy after local retrain: 0.584305
+INFO:root:>> Test accuracy after local retrain: 0.417700
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 11, starting from layer: 2
+INFO:root:n_training: 58
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.360876
+INFO:root:>> Pre-Training Test accuracy: 0.225700
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.205947
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.142615
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.069226
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.076403
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.032006
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.992395
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.983350
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.945315
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.939002
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.947075
+INFO:root:>> Training accuracy after local retrain: 0.697127
+INFO:root:>> Test accuracy after local retrain: 0.447000
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 12, starting from layer: 2
+INFO:root:n_training: 25
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.622082
+INFO:root:>> Pre-Training Test accuracy: 0.205200
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.121002
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.048769
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.004627
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.018987
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.025863
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.005653
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.969597
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.969921
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.965997
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.964452
+INFO:root:>> Training accuracy after local retrain: 0.685804
+INFO:root:>> Test accuracy after local retrain: 0.245000
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 13, starting from layer: 2
+INFO:root:n_training: 50
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.532435
+INFO:root:>> Pre-Training Test accuracy: 0.243200
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.208764
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.137936
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.059277
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.045368
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.042792
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.985458
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.987446
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.992614
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.917652
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.940716
+INFO:root:>> Training accuracy after local retrain: 0.664682
+INFO:root:>> Test accuracy after local retrain: 0.397700
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 14, starting from layer: 2
+INFO:root:n_training: 70
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.378879
+INFO:root:>> Pre-Training Test accuracy: 0.205100
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.113783
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.874671
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.802567
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.795160
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.793392
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.732972
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.727485
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.712370
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.680032
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.692398
+INFO:root:>> Training accuracy after local retrain: 0.770708
+INFO:root:>> Test accuracy after local retrain: 0.376400
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 15, starting from layer: 2
+INFO:root:n_training: 44
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.382416
+INFO:root:>> Pre-Training Test accuracy: 0.149400
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.356329
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.225428
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.201830
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.174711
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.172824
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.176676
+INFO:root:Epoch: 6 Epoch Avg Loss: 1.106360
+INFO:root:Epoch: 7 Epoch Avg Loss: 1.091739
+INFO:root:Epoch: 8 Epoch Avg Loss: 1.084779
+INFO:root:Epoch: 9 Epoch Avg Loss: 1.087604
+INFO:root:>> Training accuracy after local retrain: 0.615797
+INFO:root:>> Test accuracy after local retrain: 0.283200
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+INFO:root:init_channel_kernel_dims: [27, 423, 576, 1152, 1152, 2304, 512, 512, 10]
+INFO:root:Layer index: 2, init_num_kernel: 47
+INFO:root:weights bias: (64, 424)
+INFO:root:sigma_inv_prior shape: (424,)
+INFO:root:mean_prior shape: (424,)
+INFO:root:sigma_inv_layer shape: (424,)
+INFO:root:Number of global neurons is 79, gamma 7.000000
+INFO:root:***************Shape of global weights after match: (79, 424) ******************
+INFO:root:Branch layer index, Layer index: 2, Global weights out shapes: [(79, 423), (79,)]
+INFO:root:global inv sigma out shape: [(79, 423), (79,)]
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 0, starting from layer: 4
+INFO:root:n_training: 23
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.439944
+INFO:root:>> Pre-Training Test accuracy: 0.173200
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.511779
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.373839
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.334975
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.316296
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.286398
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.265156
+INFO:root:Epoch: 6 Epoch Avg Loss: 1.222130
+INFO:root:Epoch: 7 Epoch Avg Loss: 1.223880
+INFO:root:Epoch: 8 Epoch Avg Loss: 1.210859
+INFO:root:Epoch: 9 Epoch Avg Loss: 1.183199
+INFO:root:>> Training accuracy after local retrain: 0.585894
+INFO:root:>> Test accuracy after local retrain: 0.284000
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 1, starting from layer: 4
+INFO:root:n_training: 53
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.365656
+INFO:root:>> Pre-Training Test accuracy: 0.162700
+INFO:root:Epoch: 0 Epoch Avg Loss: 0.872871
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.797063
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.799167
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.773996
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.787342
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.760501
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.753891
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.743982
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.731702
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.748364
+INFO:root:>> Training accuracy after local retrain: 0.730411
+INFO:root:>> Test accuracy after local retrain: 0.221500
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 2, starting from layer: 4
+INFO:root:n_training: 33
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.467444
+INFO:root:>> Pre-Training Test accuracy: 0.194600
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.292995
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.247864
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.257676
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.205820
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.204459
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.211641
+INFO:root:Epoch: 6 Epoch Avg Loss: 1.214863
+INFO:root:Epoch: 7 Epoch Avg Loss: 1.175641
+INFO:root:Epoch: 8 Epoch Avg Loss: 1.171409
+INFO:root:Epoch: 9 Epoch Avg Loss: 1.172964
+INFO:root:>> Training accuracy after local retrain: 0.508746
+INFO:root:>> Test accuracy after local retrain: 0.282500
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 3, starting from layer: 4
+INFO:root:n_training: 51
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.571473
+INFO:root:>> Pre-Training Test accuracy: 0.153700
+INFO:root:Epoch: 0 Epoch Avg Loss: 0.952504
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.894537
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.891682
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.866464
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.846799
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.838137
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.820535
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.823671
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.819294
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.800438
+INFO:root:>> Training accuracy after local retrain: 0.729335
+INFO:root:>> Test accuracy after local retrain: 0.327000
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 4, starting from layer: 4
+INFO:root:n_training: 50
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.383270
+INFO:root:>> Pre-Training Test accuracy: 0.211400
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.271813
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.175063
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.169681
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.128657
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.118992
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.095527
+INFO:root:Epoch: 6 Epoch Avg Loss: 1.065020
+INFO:root:Epoch: 7 Epoch Avg Loss: 1.086420
+INFO:root:Epoch: 8 Epoch Avg Loss: 1.060065
+INFO:root:Epoch: 9 Epoch Avg Loss: 1.054351
+INFO:root:>> Training accuracy after local retrain: 0.611641
+INFO:root:>> Test accuracy after local retrain: 0.387800
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 5, starting from layer: 4
+INFO:root:n_training: 61
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.589922
+INFO:root:>> Pre-Training Test accuracy: 0.242900
+INFO:root:Epoch: 0 Epoch Avg Loss: 0.864690
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.810232
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.791378
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.781573
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.768413
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.738135
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.728798
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.718665
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.749018
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.698094
+INFO:root:>> Training accuracy after local retrain: 0.774677
+INFO:root:>> Test accuracy after local retrain: 0.319000
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 6, starting from layer: 4
+INFO:root:n_training: 62
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.404683
+INFO:root:>> Pre-Training Test accuracy: 0.213800
+INFO:root:Epoch: 0 Epoch Avg Loss: 0.901320
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.789542
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.743991
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.757684
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.717507
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.700272
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.664938
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.673576
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.662393
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.640868
+INFO:root:>> Training accuracy after local retrain: 0.799186
+INFO:root:>> Test accuracy after local retrain: 0.335000
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 7, starting from layer: 4
+INFO:root:n_training: 49
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.533887
+INFO:root:>> Pre-Training Test accuracy: 0.210400
+INFO:root:Epoch: 0 Epoch Avg Loss: 0.675255
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.567424
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.565339
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.553658
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.559240
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.533840
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.526999
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.508561
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.528563
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.501580
+INFO:root:>> Training accuracy after local retrain: 0.825448
+INFO:root:>> Test accuracy after local retrain: 0.303200
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 8, starting from layer: 4
+INFO:root:n_training: 51
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.448233
+INFO:root:>> Pre-Training Test accuracy: 0.282000
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.210140
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.076643
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.048797
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.025558
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.001433
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.002372
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.977153
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.943283
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.934649
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.909460
+INFO:root:>> Training accuracy after local retrain: 0.687558
+INFO:root:>> Test accuracy after local retrain: 0.464600
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 9, starting from layer: 4
+INFO:root:n_training: 54
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.354545
+INFO:root:>> Pre-Training Test accuracy: 0.121400
+INFO:root:Epoch: 0 Epoch Avg Loss: 0.990774
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.895256
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.858234
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.854191
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.822817
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.805545
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.793070
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.776762
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.764936
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.750733
+INFO:root:>> Training accuracy after local retrain: 0.737243
+INFO:root:>> Test accuracy after local retrain: 0.274500
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 10, starting from layer: 4
+INFO:root:n_training: 55
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.441001
+INFO:root:>> Pre-Training Test accuracy: 0.335700
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.220495
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.152672
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.123994
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.090913
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.107515
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.060492
+INFO:root:Epoch: 6 Epoch Avg Loss: 1.065881
+INFO:root:Epoch: 7 Epoch Avg Loss: 1.052303
+INFO:root:Epoch: 8 Epoch Avg Loss: 1.030708
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.990344
+INFO:root:>> Training accuracy after local retrain: 0.615866
+INFO:root:>> Test accuracy after local retrain: 0.470000
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 11, starting from layer: 4
+INFO:root:n_training: 58
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.341997
+INFO:root:>> Pre-Training Test accuracy: 0.281400
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.064462
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.932890
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.906555
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.879306
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.900079
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.831809
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.827700
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.803845
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.786881
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.757829
+INFO:root:>> Training accuracy after local retrain: 0.749932
+INFO:root:>> Test accuracy after local retrain: 0.527200
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 12, starting from layer: 4
+INFO:root:n_training: 25
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.523659
+INFO:root:>> Pre-Training Test accuracy: 0.195100
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.048782
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.953117
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.930740
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.937004
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.946872
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.923736
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.915744
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.893126
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.843049
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.872456
+INFO:root:>> Training accuracy after local retrain: 0.734385
+INFO:root:>> Test accuracy after local retrain: 0.253500
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 13, starting from layer: 4
+INFO:root:n_training: 50
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.556252
+INFO:root:>> Pre-Training Test accuracy: 0.262600
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.003370
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.918135
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.907407
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.907622
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.843350
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.830824
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.838456
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.826608
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.781244
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.766483
+INFO:root:>> Training accuracy after local retrain: 0.754936
+INFO:root:>> Test accuracy after local retrain: 0.465800
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 14, starting from layer: 4
+INFO:root:n_training: 70
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.475776
+INFO:root:>> Pre-Training Test accuracy: 0.254600
+INFO:root:Epoch: 0 Epoch Avg Loss: 0.803284
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.731191
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.701169
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.689550
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.656058
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.652252
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.641561
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.632502
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.617748
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.592261
+INFO:root:>> Training accuracy after local retrain: 0.810002
+INFO:root:>> Test accuracy after local retrain: 0.388300
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 15, starting from layer: 4
+INFO:root:n_training: 44
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.455325
+INFO:root:>> Pre-Training Test accuracy: 0.198100
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.203742
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.087939
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.072459
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.042917
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.035779
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.012922
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.997723
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.982433
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.975473
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.955807
+INFO:root:>> Training accuracy after local retrain: 0.638313
+INFO:root:>> Test accuracy after local retrain: 0.284200
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+0 check_zero_rate 0.0
+INFO:root:init_channel_kernel_dims: [27, 423, 711, 1152, 1152, 2304, 512, 512, 10]
+INFO:root:Layer index: 3, init_num_kernel: 47
+INFO:root:weights bias: (128, 712)
+INFO:root:sigma_inv_prior shape: (712,)
+INFO:root:mean_prior shape: (712,)
+INFO:root:sigma_inv_layer shape: (712,)
+INFO:root:Number of global neurons is 143, gamma 7.000000
+INFO:root:***************Shape of global weights after match: (143, 712) ******************
+INFO:root:Branch layer index, Layer index: 3, Global weights out shapes: [(143, 711), (143,)]
+INFO:root:global inv sigma out shape: [(143, 711), (143,)]
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 0, starting from layer: 6
+INFO:root:n_training: 23
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.569134
+INFO:root:>> Pre-Training Test accuracy: 0.272300
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.208418
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.162475
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.172421
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.197008
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.138933
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.139138
+INFO:root:Epoch: 6 Epoch Avg Loss: 1.126738
+INFO:root:Epoch: 7 Epoch Avg Loss: 1.106373
+INFO:root:Epoch: 8 Epoch Avg Loss: 1.097083
+INFO:root:Epoch: 9 Epoch Avg Loss: 1.095982
+INFO:root:>> Training accuracy after local retrain: 0.615922
+INFO:root:>> Test accuracy after local retrain: 0.290300
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 1, starting from layer: 6
+INFO:root:n_training: 53
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.275893
+INFO:root:>> Pre-Training Test accuracy: 0.138200
+INFO:root:Epoch: 0 Epoch Avg Loss: 0.897648
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.806485
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.734272
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.761887
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.727732
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.722929
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.709231
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.702379
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.702239
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.704731
+INFO:root:>> Training accuracy after local retrain: 0.753227
+INFO:root:>> Test accuracy after local retrain: 0.200800
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 2, starting from layer: 6
+INFO:root:n_training: 33
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.472303
+INFO:root:>> Pre-Training Test accuracy: 0.279800
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.199148
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.175841
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.185256
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.144359
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.136816
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.126236
+INFO:root:Epoch: 6 Epoch Avg Loss: 1.136078
+INFO:root:Epoch: 7 Epoch Avg Loss: 1.097790
+INFO:root:Epoch: 8 Epoch Avg Loss: 1.122081
+INFO:root:Epoch: 9 Epoch Avg Loss: 1.125658
+INFO:root:>> Training accuracy after local retrain: 0.585034
+INFO:root:>> Test accuracy after local retrain: 0.307000
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 3, starting from layer: 6
+INFO:root:n_training: 51
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.600684
+INFO:root:>> Pre-Training Test accuracy: 0.257800
+INFO:root:Epoch: 0 Epoch Avg Loss: 0.858441
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.822226
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.791443
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.775488
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.771966
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.769177
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.754739
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.748917
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.741147
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.733972
+INFO:root:>> Training accuracy after local retrain: 0.741765
+INFO:root:>> Test accuracy after local retrain: 0.363900
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 4, starting from layer: 6
+INFO:root:n_training: 50
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.595738
+INFO:root:>> Pre-Training Test accuracy: 0.342800
+INFO:root:Epoch: 0 Epoch Avg Loss: 1.087197
+INFO:root:Epoch: 1 Epoch Avg Loss: 1.041726
+INFO:root:Epoch: 2 Epoch Avg Loss: 1.023761
+INFO:root:Epoch: 3 Epoch Avg Loss: 1.029020
+INFO:root:Epoch: 4 Epoch Avg Loss: 1.013672
+INFO:root:Epoch: 5 Epoch Avg Loss: 1.004370
+INFO:root:Epoch: 6 Epoch Avg Loss: 0.992982
+INFO:root:Epoch: 7 Epoch Avg Loss: 0.946722
+INFO:root:Epoch: 8 Epoch Avg Loss: 0.944863
+INFO:root:Epoch: 9 Epoch Avg Loss: 0.963926
+INFO:root:>> Training accuracy after local retrain: 0.674300
+INFO:root:>> Test accuracy after local retrain: 0.408300
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Re-training on local worker: 5, starting from layer: 6
+INFO:root:n_training: 61
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.697933
+INFO:root:>> Pre-Training Test accuracy: 0.284500
+INFO:root:Epoch: 0 Epoch Avg Loss: 0.749555
+INFO:root:Epoch: 1 Epoch Avg Loss: 0.719085
+INFO:root:Epoch: 2 Epoch Avg Loss: 0.718655
+INFO:root:Epoch: 3 Epoch Avg Loss: 0.694578
+INFO:root:Epoch: 4 Epoch Avg Loss: 0.696368
+INFO:root:Epoch: 5 Epoch Avg Loss: 0.675869
+^CTraceback (most recent call last):
+  File "main.py", line 1618, in <module>
+    hungarian_weights, assignments_list = BBP_MAP(nets_list, model_meta_data, layer_type, net_dataidx_map, averaging_weights, args, device=device,prune_rate=args.prune_rate)
+  File "main.py", line 1366, in BBP_MAP
+    retrained_cnn = local_retrain((train_dl_local,test_dl_local), tempt_weights[worker_index], args, 
+  File "main.py", line 691, in local_retrain
+    for batch_idx, (x, target) in enumerate(train_dl_local):
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/root/autodl-tmp/New0.0/FedMA/datasets.py", line 149, in __getitem__
+    img = self.transform(img)
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 234, in __call__
+    return F.to_pil_image(pic, self.mode)
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/transforms/functional.py", line 292, in to_pil_image
+    npimg = np.transpose(pic.cpu().numpy(), (1, 2, 0))
+  File "<__array_function__ internals>", line 180, in transpose
+  File "/root/miniconda3/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 660, in transpose
+    return _wrapfunc(a, 'transpose', axes)
+  File "/root/miniconda3/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+KeyboardInterrupt
+^C^C^Croot@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ^C
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ^C
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ^C
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ^C
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ./run.sh
+INFO:root:cuda:0
+INFO:root:Partitioning data
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:averaging_weights: [[1.082e-01 4.260e-02 6.800e-03 3.580e-02 2.600e-03 1.980e-02 4.000e-03
+  7.400e-03 2.140e-02 3.780e-02]
+ [1.800e-03 6.000e-04 1.840e-02 4.000e-03 8.760e-02 3.164e-01 5.800e-03
+  2.316e-01 0.000e+00 0.000e+00]
+ [1.000e-03 2.380e-02 1.280e-02 9.220e-02 8.620e-02 1.506e-01 4.160e-02
+  2.000e-04 1.400e-03 1.800e-03]
+ [4.500e-02 2.960e-02 2.870e-01 1.000e-03 5.400e-03 2.170e-01 2.200e-03
+  2.240e-02 3.400e-02 0.000e+00]
+ [5.720e-02 1.538e-01 6.400e-02 6.840e-02 1.710e-01 4.680e-02 2.000e-04
+  6.020e-02 1.600e-03 5.600e-03]
+ [1.434e-01 1.300e-02 8.000e-04 1.816e-01 2.602e-01 7.000e-03 6.800e-03
+  4.000e-03 1.572e-01 0.000e+00]
+ [1.000e-03 3.200e-03 5.740e-02 1.880e-02 1.228e-01 6.400e-03 1.612e-01
+  0.000e+00 5.720e-02 3.578e-01]
+ [8.200e-02 2.092e-01 1.322e-01 2.004e-01 1.800e-03 0.000e+00 0.000e+00
+  0.000e+00 0.000e+00 0.000e+00]
+ [1.280e-01 2.280e-02 1.240e-02 1.420e-02 6.180e-02 9.400e-03 1.106e-01
+  1.542e-01 1.068e-01 3.080e-02]
+ [4.000e-04 4.000e-04 2.124e-01 1.220e-02 2.560e-02 5.780e-02 2.028e-01
+  1.704e-01 0.000e+00 0.000e+00]
+ [1.318e-01 7.100e-02 5.560e-02 1.138e-01 1.420e-02 7.240e-02 2.740e-02
+  1.304e-01 8.680e-02 0.000e+00]
+ [5.880e-02 5.660e-02 3.740e-02 1.860e-02 0.000e+00 4.780e-02 2.600e-02
+  1.650e-01 1.574e-01 1.634e-01]
+ [5.240e-02 1.492e-01 3.600e-03 2.080e-02 1.800e-03 0.000e+00 6.300e-02
+  2.200e-03 1.800e-03 2.220e-02]
+ [5.580e-02 5.320e-02 1.540e-02 6.600e-03 2.600e-03 4.460e-02 1.668e-01
+  4.720e-02 1.770e-01 6.900e-02]
+ [1.020e-01 3.800e-03 4.200e-03 1.902e-01 5.400e-03 1.600e-03 9.860e-02
+  4.400e-03 1.926e-01 2.930e-01]
+ [3.120e-02 1.672e-01 7.960e-02 2.140e-02 1.510e-01 2.400e-03 8.300e-02
+  4.000e-04 4.800e-03 1.860e-02]]
+INFO:root:Initializing nets
+INFO:root:Retrain? : True
+INFO:root:Training network 0. n_training: 1432
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 0
+INFO:root:n_training: 23
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.14874301675977653
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 2.209602
+INFO:root:Epoch: 1 Loss: 2.006323
+INFO:root:Epoch: 2 Loss: 1.897348
+INFO:root:Epoch: 3 Loss: 1.856882
+INFO:root:Epoch: 4 Loss: 1.827978
+INFO:root:Epoch: 5 Loss: 1.807545
+INFO:root:Epoch: 6 Loss: 1.784518
+INFO:root:Epoch: 7 Loss: 1.719234
+INFO:root:Epoch: 8 Loss: 1.687081
+INFO:root:Epoch: 9 Loss: 1.661928
+INFO:root:Epoch: 10 Loss: 1.623288
+INFO:root:Epoch: 11 Loss: 1.626769
+INFO:root:Epoch: 12 Loss: 1.635860
+INFO:root:Epoch: 13 Loss: 1.607380
+INFO:root:Epoch: 14 Loss: 1.613490
+INFO:root:Epoch: 15 Loss: 1.635601
+INFO:root:Epoch: 16 Loss: 1.656628
+INFO:root:Epoch: 17 Loss: 1.599063
+INFO:root:Epoch: 18 Loss: 1.596500
+INFO:root:Epoch: 19 Loss: 1.529928
+^CTraceback (most recent call last):
+  File "main.py", line 1594, in <module>
+    nets_list = local_train(nets, args, net_dataidx_map, device=device)
+  File "main.py", line 174, in local_train
+    trainacc, testacc = train_net(net_id, net, train_dl_local, test_dl_global, args.epochs, args.lr, args, device=device)
+  File "main.py", line 150, in train_net
+    test_acc, conf_matrix = compute_accuracy(net, test_dataloader, get_confusion_matrix=True, device=device)
+  File "/root/autodl-tmp/New0.0/FedMA/utils.py", line 847, in compute_accuracy
+    for batch_idx, (x, target) in enumerate(dataloader):
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/root/autodl-tmp/New0.0/FedMA/datasets.py", line 149, in __getitem__
+    img = self.transform(img)
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 277, in forward
+    return F.normalize(tensor, self.mean, self.std, self.inplace)
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/transforms/functional.py", line 363, in normalize
+    return F_t.normalize(tensor, mean=mean, std=std, inplace=inplace)
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/transforms/_functional_tensor.py", line 920, in normalize
+    mean = torch.as_tensor(mean, dtype=dtype, device=tensor.device)
+KeyboardInterrupt
+^Croot@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ^C
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ^C
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ^C
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ./run.sh
+INFO:root:cuda:0
+INFO:root:Partitioning data
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:averaging_weights: [[1.082e-01 4.260e-02 6.800e-03 3.580e-02 2.600e-03 1.980e-02 4.000e-03
+  7.400e-03 2.140e-02 3.780e-02]
+ [1.800e-03 6.000e-04 1.840e-02 4.000e-03 8.760e-02 3.164e-01 5.800e-03
+  2.316e-01 0.000e+00 0.000e+00]
+ [1.000e-03 2.380e-02 1.280e-02 9.220e-02 8.620e-02 1.506e-01 4.160e-02
+  2.000e-04 1.400e-03 1.800e-03]
+ [4.500e-02 2.960e-02 2.870e-01 1.000e-03 5.400e-03 2.170e-01 2.200e-03
+  2.240e-02 3.400e-02 0.000e+00]
+ [5.720e-02 1.538e-01 6.400e-02 6.840e-02 1.710e-01 4.680e-02 2.000e-04
+  6.020e-02 1.600e-03 5.600e-03]
+ [1.434e-01 1.300e-02 8.000e-04 1.816e-01 2.602e-01 7.000e-03 6.800e-03
+  4.000e-03 1.572e-01 0.000e+00]
+ [1.000e-03 3.200e-03 5.740e-02 1.880e-02 1.228e-01 6.400e-03 1.612e-01
+  0.000e+00 5.720e-02 3.578e-01]
+ [8.200e-02 2.092e-01 1.322e-01 2.004e-01 1.800e-03 0.000e+00 0.000e+00
+  0.000e+00 0.000e+00 0.000e+00]
+ [1.280e-01 2.280e-02 1.240e-02 1.420e-02 6.180e-02 9.400e-03 1.106e-01
+  1.542e-01 1.068e-01 3.080e-02]
+ [4.000e-04 4.000e-04 2.124e-01 1.220e-02 2.560e-02 5.780e-02 2.028e-01
+  1.704e-01 0.000e+00 0.000e+00]
+ [1.318e-01 7.100e-02 5.560e-02 1.138e-01 1.420e-02 7.240e-02 2.740e-02
+  1.304e-01 8.680e-02 0.000e+00]
+ [5.880e-02 5.660e-02 3.740e-02 1.860e-02 0.000e+00 4.780e-02 2.600e-02
+  1.650e-01 1.574e-01 1.634e-01]
+ [5.240e-02 1.492e-01 3.600e-03 2.080e-02 1.800e-03 0.000e+00 6.300e-02
+  2.200e-03 1.800e-03 2.220e-02]
+ [5.580e-02 5.320e-02 1.540e-02 6.600e-03 2.600e-03 4.460e-02 1.668e-01
+  4.720e-02 1.770e-01 6.900e-02]
+ [1.020e-01 3.800e-03 4.200e-03 1.902e-01 5.400e-03 1.600e-03 9.860e-02
+  4.400e-03 1.926e-01 2.930e-01]
+ [3.120e-02 1.672e-01 7.960e-02 2.140e-02 1.510e-01 2.400e-03 8.300e-02
+  4.000e-04 4.800e-03 1.860e-02]]
+INFO:root:Initializing nets
+INFO:root:Retrain? : True
+INFO:root:Training network 0. n_training: 1432
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 0
+INFO:root:n_training: 23
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.14874301675977653
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 2.209602
+INFO:root:Epoch: 1 Loss: 2.006323
+INFO:root:Epoch: 2 Loss: 1.897347
+INFO:root:Epoch: 3 Loss: 1.856883
+INFO:root:Epoch: 4 Loss: 1.827971
+INFO:root:Epoch: 5 Loss: 1.807590
+INFO:root:Epoch: 6 Loss: 1.784611
+INFO:root:Epoch: 7 Loss: 1.719447
+INFO:root:Epoch: 8 Loss: 1.687025
+INFO:root:Epoch: 9 Loss: 1.662463
+INFO:root:Epoch: 10 Loss: 1.624900
+INFO:root:Epoch: 11 Loss: 1.625626
+INFO:root:Epoch: 12 Loss: 1.635105
+INFO:root:Epoch: 13 Loss: 1.607173
+INFO:root:Epoch: 14 Loss: 1.612090
+INFO:root:Epoch: 15 Loss: 1.634419
+INFO:root:Epoch: 16 Loss: 1.661510
+INFO:root:Epoch: 17 Loss: 1.599667
+INFO:root:Epoch: 18 Loss: 1.596429
+INFO:root:Epoch: 19 Loss: 1.530851
+INFO:root:>> Training accuracy: 0.472067
+INFO:root:>> Test accuracy: 0.216700
+INFO:root: ** Training complete **
+INFO:root:saving local model-0
+INFO:root:Training network 1. n_training: 3331
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 1
+INFO:root:n_training: 53
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.0
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 1.753297
+INFO:root:Epoch: 1 Loss: 1.220912
+INFO:root:Epoch: 2 Loss: 1.187648
+INFO:root:Epoch: 3 Loss: 1.177557
+INFO:root:Epoch: 4 Loss: 1.164535
+INFO:root:Epoch: 5 Loss: 1.130783
+INFO:root:Epoch: 6 Loss: 1.095521
+INFO:root:Epoch: 7 Loss: 1.071464
+INFO:root:Epoch: 8 Loss: 1.079855
+INFO:root:Epoch: 9 Loss: 1.089719
+INFO:root:Epoch: 10 Loss: 1.028850
+INFO:root:Epoch: 11 Loss: 1.029983
+INFO:root:Epoch: 12 Loss: 0.981018
+INFO:root:Epoch: 13 Loss: 0.979618
+INFO:root:Epoch: 14 Loss: 0.957067
+INFO:root:Epoch: 15 Loss: 0.948749
+INFO:root:Epoch: 16 Loss: 0.917901
+INFO:root:Epoch: 17 Loss: 0.904361
+INFO:root:Epoch: 18 Loss: 0.962866
+INFO:root:Epoch: 19 Loss: 0.899881
+INFO:root:>> Training accuracy: 0.675473
+INFO:root:>> Test accuracy: 0.174200
+INFO:root: ** Training complete **
+INFO:root:saving local model-1
+INFO:root:Training network 2. n_training: 2058
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+^CTraceback (most recent call last):
+  File "main.py", line 1594, in <module>
+    nets_list = local_train(nets, args, net_dataidx_map, device=device)
+  File "main.py", line 169, in local_train
+    train_dl_global, test_dl_global = get_dataloader(args.dataset, args_datadir, args.batch_size, 32)
+  File "/root/autodl-tmp/New0.0/FedMA/utils.py", line 1015, in get_dataloader
+    train_ds = dl_obj(datadir, dataidxs=dataidxs, train=True, transform=transform_train, download=True)
+  File "/root/autodl-tmp/New0.0/FedMA/datasets.py", line 111, in __init__
+    self.data, self.target = self.__build_truncated_dataset__()
+  File "/root/autodl-tmp/New0.0/FedMA/datasets.py", line 115, in __build_truncated_dataset__
+    cifar_dataobj = CIFAR10(self.root, self.train, self.transform, self.target_transform, self.download)
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/datasets/cifar.py", line 67, in __init__
+    if not self._check_integrity():
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/datasets/cifar.py", line 131, in _check_integrity
+    if not check_integrity(fpath, md5):
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/datasets/utils.py", line 74, in check_integrity
+    return check_md5(fpath, md5)
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/datasets/utils.py", line 66, in check_md5
+    return md5 == calculate_md5(fpath, **kwargs)
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/datasets/utils.py", line 61, in calculate_md5
+    md5.update(chunk)
+KeyboardInterrupt
+^C^Croot@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ^C
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ^C
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ^C
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ./run.sh
+INFO:root:cuda:0
+INFO:root:Partitioning data
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:averaging_weights: [[1.082e-01 4.260e-02 6.800e-03 3.580e-02 2.600e-03 1.980e-02 4.000e-03
+  7.400e-03 2.140e-02 3.780e-02]
+ [1.800e-03 6.000e-04 1.840e-02 4.000e-03 8.760e-02 3.164e-01 5.800e-03
+  2.316e-01 0.000e+00 0.000e+00]
+ [1.000e-03 2.380e-02 1.280e-02 9.220e-02 8.620e-02 1.506e-01 4.160e-02
+  2.000e-04 1.400e-03 1.800e-03]
+ [4.500e-02 2.960e-02 2.870e-01 1.000e-03 5.400e-03 2.170e-01 2.200e-03
+  2.240e-02 3.400e-02 0.000e+00]
+ [5.720e-02 1.538e-01 6.400e-02 6.840e-02 1.710e-01 4.680e-02 2.000e-04
+  6.020e-02 1.600e-03 5.600e-03]
+ [1.434e-01 1.300e-02 8.000e-04 1.816e-01 2.602e-01 7.000e-03 6.800e-03
+  4.000e-03 1.572e-01 0.000e+00]
+ [1.000e-03 3.200e-03 5.740e-02 1.880e-02 1.228e-01 6.400e-03 1.612e-01
+  0.000e+00 5.720e-02 3.578e-01]
+ [8.200e-02 2.092e-01 1.322e-01 2.004e-01 1.800e-03 0.000e+00 0.000e+00
+  0.000e+00 0.000e+00 0.000e+00]
+ [1.280e-01 2.280e-02 1.240e-02 1.420e-02 6.180e-02 9.400e-03 1.106e-01
+  1.542e-01 1.068e-01 3.080e-02]
+ [4.000e-04 4.000e-04 2.124e-01 1.220e-02 2.560e-02 5.780e-02 2.028e-01
+  1.704e-01 0.000e+00 0.000e+00]
+ [1.318e-01 7.100e-02 5.560e-02 1.138e-01 1.420e-02 7.240e-02 2.740e-02
+  1.304e-01 8.680e-02 0.000e+00]
+ [5.880e-02 5.660e-02 3.740e-02 1.860e-02 0.000e+00 4.780e-02 2.600e-02
+  1.650e-01 1.574e-01 1.634e-01]
+ [5.240e-02 1.492e-01 3.600e-03 2.080e-02 1.800e-03 0.000e+00 6.300e-02
+  2.200e-03 1.800e-03 2.220e-02]
+ [5.580e-02 5.320e-02 1.540e-02 6.600e-03 2.600e-03 4.460e-02 1.668e-01
+  4.720e-02 1.770e-01 6.900e-02]
+ [1.020e-01 3.800e-03 4.200e-03 1.902e-01 5.400e-03 1.600e-03 9.860e-02
+  4.400e-03 1.926e-01 2.930e-01]
+ [3.120e-02 1.672e-01 7.960e-02 2.140e-02 1.510e-01 2.400e-03 8.300e-02
+  4.000e-04 4.800e-03 1.860e-02]]
+INFO:root:Initializing nets
+INFO:root:Retrain? : True
+INFO:root:Training network 0. n_training: 1432
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 0
+INFO:root:n_training: 23
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.14874301675977653
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 2.209602
+INFO:root:Epoch: 1 Loss: 2.006323
+INFO:root:Epoch: 2 Loss: 1.897346
+INFO:root:Epoch: 3 Loss: 1.856881
+INFO:root:Epoch: 4 Loss: 1.827972
+INFO:root:Epoch: 5 Loss: 1.807449
+INFO:root:Epoch: 6 Loss: 1.784387
+INFO:root:Epoch: 7 Loss: 1.719164
+INFO:root:Epoch: 8 Loss: 1.686893
+INFO:root:Epoch: 9 Loss: 1.661294
+INFO:root:Epoch: 10 Loss: 1.623405
+INFO:root:Epoch: 11 Loss: 1.626140
+INFO:root:Epoch: 12 Loss: 1.635401
+INFO:root:Epoch: 13 Loss: 1.606335
+INFO:root:Epoch: 14 Loss: 1.612541
+INFO:root:Epoch: 15 Loss: 1.635747
+INFO:root:Epoch: 16 Loss: 1.660784
+INFO:root:Epoch: 17 Loss: 1.599914
+INFO:root:Epoch: 18 Loss: 1.593896
+INFO:root:Epoch: 19 Loss: 1.529622
+INFO:root:>> Training accuracy: 0.472067
+INFO:root:>> Test accuracy: 0.217200
+INFO:root: ** Training complete **
+INFO:root:saving local model-0
+INFO:root:Training network 1. n_training: 3331
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 1
+INFO:root:n_training: 53
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.0
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 1.753298
+INFO:root:Epoch: 1 Loss: 1.220913
+INFO:root:Epoch: 2 Loss: 1.187673
+INFO:root:Epoch: 3 Loss: 1.177565
+INFO:root:Epoch: 4 Loss: 1.164787
+INFO:root:Epoch: 5 Loss: 1.130761
+INFO:root:Epoch: 6 Loss: 1.095470
+INFO:root:Epoch: 7 Loss: 1.071260
+INFO:root:Epoch: 8 Loss: 1.080075
+INFO:root:Epoch: 9 Loss: 1.090297
+INFO:root:Epoch: 10 Loss: 1.031465
+INFO:root:Epoch: 11 Loss: 1.031638
+INFO:root:Epoch: 12 Loss: 0.982587
+INFO:root:Epoch: 13 Loss: 0.980887
+INFO:root:Epoch: 14 Loss: 0.959708
+INFO:root:Epoch: 15 Loss: 0.948307
+INFO:root:Epoch: 16 Loss: 0.916623
+INFO:root:Epoch: 17 Loss: 0.907740
+INFO:root:Epoch: 18 Loss: 0.958482
+INFO:root:Epoch: 19 Loss: 0.891429
+INFO:root:>> Training accuracy: 0.678775
+INFO:root:>> Test accuracy: 0.176100
+INFO:root: ** Training complete **
+INFO:root:saving local model-1
+INFO:root:Training network 2. n_training: 2058
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 2
+INFO:root:n_training: 33
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.1010689990281827
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 2.145199
+INFO:root:Epoch: 1 Loss: 1.746671
+INFO:root:Epoch: 2 Loss: 1.619683
+INFO:root:Epoch: 3 Loss: 1.598609
+INFO:root:Epoch: 4 Loss: 1.592319
+INFO:root:Epoch: 5 Loss: 1.589558
+INFO:root:Epoch: 6 Loss: 1.587573
+INFO:root:Epoch: 7 Loss: 1.560764
+INFO:root:Epoch: 8 Loss: 1.572379
+INFO:root:Epoch: 9 Loss: 1.535913
+INFO:root:Epoch: 10 Loss: 1.496428
+INFO:root:Epoch: 11 Loss: 1.479646
+INFO:root:Epoch: 12 Loss: 1.480687
+INFO:root:Epoch: 13 Loss: 1.482833
+INFO:root:Epoch: 14 Loss: 1.469826
+INFO:root:Epoch: 15 Loss: 1.469558
+INFO:root:Epoch: 16 Loss: 1.478755
+INFO:root:Epoch: 17 Loss: 1.413799
+INFO:root:Epoch: 18 Loss: 1.412419
+INFO:root:Epoch: 19 Loss: 1.433754
+INFO:root:>> Training accuracy: 0.456754
+INFO:root:>> Test accuracy: 0.149900
+INFO:root: ** Training complete **
+INFO:root:saving local model-2
+INFO:root:Training network 3. n_training: 3218
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 3
+INFO:root:n_training: 51
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.3371659415786203
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 1.883107
+INFO:root:Epoch: 1 Loss: 1.454094
+INFO:root:Epoch: 2 Loss: 1.416866
+INFO:root:Epoch: 3 Loss: 1.401339
+INFO:root:Epoch: 4 Loss: 1.393987
+INFO:root:Epoch: 5 Loss: 1.360368
+INFO:root:Epoch: 6 Loss: 1.333833
+INFO:root:Epoch: 7 Loss: 1.295894
+INFO:root:Epoch: 8 Loss: 1.262449
+INFO:root:Epoch: 9 Loss: 1.228144
+INFO:root:Epoch: 10 Loss: 1.200514
+INFO:root:Epoch: 11 Loss: 1.183952
+INFO:root:Epoch: 12 Loss: 1.145741
+INFO:root:Epoch: 13 Loss: 1.080190
+INFO:root:Epoch: 14 Loss: 1.033733
+INFO:root:Epoch: 15 Loss: 1.039993
+INFO:root:Epoch: 16 Loss: 1.003840
+INFO:root:Epoch: 17 Loss: 1.027372
+INFO:root:Epoch: 18 Loss: 0.967293
+INFO:root:Epoch: 19 Loss: 0.965350
+INFO:root:>> Training accuracy: 0.625855
+INFO:root:>> Test accuracy: 0.246700
+INFO:root: ** Training complete **
+INFO:root:saving local model-3
+INFO:root:Training network 4. n_training: 3144
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 4
+INFO:root:n_training: 50
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.008905852417302799
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 2.168538
+INFO:root:Epoch: 1 Loss: 1.964262
+INFO:root:Epoch: 2 Loss: 1.899799
+INFO:root:Epoch: 3 Loss: 1.875803
+INFO:root:Epoch: 4 Loss: 1.861604
+INFO:root:Epoch: 5 Loss: 1.808534
+INFO:root:Epoch: 6 Loss: 1.666268
+INFO:root:Epoch: 7 Loss: 1.563145
+INFO:root:Epoch: 8 Loss: 1.541518
+INFO:root:Epoch: 9 Loss: 1.479065
+INFO:root:Epoch: 10 Loss: 1.504340
+INFO:root:Epoch: 11 Loss: 1.453693
+INFO:root:Epoch: 12 Loss: 1.468416
+INFO:root:Epoch: 13 Loss: 1.400054
+INFO:root:Epoch: 14 Loss: 1.439755
+INFO:root:Epoch: 15 Loss: 1.399150
+INFO:root:Epoch: 16 Loss: 1.473155
+INFO:root:Epoch: 17 Loss: 1.356885
+INFO:root:Epoch: 18 Loss: 1.344448
+INFO:root:Epoch: 19 Loss: 1.363273
+INFO:root:>> Training accuracy: 0.490458
+INFO:root:>> Test accuracy: 0.215100
+INFO:root: ** Training complete **
+INFO:root:saving local model-4
+INFO:root:Training network 5. n_training: 3870
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:Training network 5
+INFO:root:n_training: 61
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.02248062015503876
+INFO:root:>> Pre-Training Test accuracy: 0.0937
+INFO:root:Epoch: 0 Loss: 1.967427
+INFO:root:Epoch: 1 Loss: 1.550998
+INFO:root:Epoch: 2 Loss: 1.542706
+INFO:root:Epoch: 3 Loss: 1.534247
+INFO:root:Epoch: 4 Loss: 1.380685
+INFO:root:Epoch: 5 Loss: 1.250823
+INFO:root:Epoch: 6 Loss: 1.225630
+INFO:root:Epoch: 7 Loss: 1.163178
+INFO:root:Epoch: 8 Loss: 1.132257
+INFO:root:Epoch: 9 Loss: 1.136485
+INFO:root:Epoch: 10 Loss: 1.081937
+INFO:root:Epoch: 11 Loss: 1.084560
+INFO:root:Epoch: 12 Loss: 1.039560
+INFO:root:Epoch: 13 Loss: 1.016261
+INFO:root:Epoch: 14 Loss: 1.016471
+INFO:root:Epoch: 15 Loss: 0.969890
+INFO:root:Epoch: 16 Loss: 0.966175
+INFO:root:Epoch: 17 Loss: 0.963393
+INFO:root:Epoch: 18 Loss: 0.917918
+INFO:root:Epoch: 19 Loss: 0.927032
+^CTraceback (most recent call last):
+  File "main.py", line 1594, in <module>
+    nets_list = local_train(nets, args, net_dataidx_map, device=device)
+  File "main.py", line 174, in local_train
+    trainacc, testacc = train_net(net_id, net, train_dl_local, test_dl_global, args.epochs, args.lr, args, device=device)
+  File "main.py", line 149, in train_net
+    train_acc = compute_accuracy(net, train_dataloader, device=device)
+  File "/root/autodl-tmp/New0.0/FedMA/utils.py", line 847, in compute_accuracy
+    for batch_idx, (x, target) in enumerate(dataloader):
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/root/autodl-tmp/New0.0/FedMA/datasets.py", line 149, in __getitem__
+    img = self.transform(img)
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 277, in forward
+    return F.normalize(tensor, self.mean, self.std, self.inplace)
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/transforms/functional.py", line 363, in normalize
+    return F_t.normalize(tensor, mean=mean, std=std, inplace=inplace)
+  File "/root/miniconda3/lib/python3.8/site-packages/torchvision/transforms/_functional_tensor.py", line 922, in normalize
+    if (std == 0).any():
+KeyboardInterrupt
+^Croot@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ^C
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ^C
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ^C
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ^C
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# ls
+LICENSE          datasets.py        main.py                  run_dist_skew.sh       trained_local_model13  trained_local_model5  vgg.py
+README.md        dist_skew_main.py  [0m[01;34mmatching[0m                 trained_local_model0   trained_local_model14  trained_local_model6
+Untitled.ipynb   [01;34mjupyter_notebook[0m   matching_performance.py  trained_local_model1   trained_local_model15  trained_local_model7
+[01;34m__pycache__[0m      [01;34mlanguage_modeling[0m  [01;34mmatching_weights_cache[0m   trained_local_model10  trained_local_model2   trained_local_model8
+combine_nets.py  log.txt            model.py                 trained_local_model11  trained_local_model3   trained_local_model9
+[01;34mdata[0m             log_save.txt       [01;32mrun.sh[0m                   trained_local_model12  trained_local_model4   utils.py
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0/FedMA# cd ..
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp/New0.0# cd ..
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp# ls
+[0m[01;34mNew0-0.005[0m  [01;34mNew0.0[0m  [01;34mNew0.1[0m  [01;34mNew0.2[0m  [01;34mNew0.3[0m  [01;34mNew1-0.005[0m  [01;34mNew2-0.005[0m  [01;34mNew3-0.005[0m  [01;32mtmp.zip[0m
+root@autodl-container-78d4478e04-c0c9c37e:~/autodl-tmp# 

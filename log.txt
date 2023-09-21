@@ -1,0 +1,100 @@
+INFO:root:cuda:0
+INFO:root:Partitioning data
+INFO:root:averaging_weights: [[1.082e-01 4.260e-02 6.800e-03 3.580e-02 2.600e-03 1.980e-02 4.000e-03
+  7.400e-03 2.140e-02 3.780e-02]
+ [1.800e-03 6.000e-04 1.840e-02 4.000e-03 8.760e-02 3.164e-01 5.800e-03
+  2.316e-01 0.000e+00 0.000e+00]
+ [1.000e-03 2.380e-02 1.280e-02 9.220e-02 8.620e-02 1.506e-01 4.160e-02
+  2.000e-04 1.400e-03 1.800e-03]
+ [4.500e-02 2.960e-02 2.870e-01 1.000e-03 5.400e-03 2.170e-01 2.200e-03
+  2.240e-02 3.400e-02 0.000e+00]
+ [5.720e-02 1.538e-01 6.400e-02 6.840e-02 1.710e-01 4.680e-02 2.000e-04
+  6.020e-02 1.600e-03 5.600e-03]
+ [1.434e-01 1.300e-02 8.000e-04 1.816e-01 2.602e-01 7.000e-03 6.800e-03
+  4.000e-03 1.572e-01 0.000e+00]
+ [1.000e-03 3.200e-03 5.740e-02 1.880e-02 1.228e-01 6.400e-03 1.612e-01
+  0.000e+00 5.720e-02 3.578e-01]
+ [8.200e-02 2.092e-01 1.322e-01 2.004e-01 1.800e-03 0.000e+00 0.000e+00
+  0.000e+00 0.000e+00 0.000e+00]
+ [1.280e-01 2.280e-02 1.240e-02 1.420e-02 6.180e-02 9.400e-03 1.106e-01
+  1.542e-01 1.068e-01 3.080e-02]
+ [4.000e-04 4.000e-04 2.124e-01 1.220e-02 2.560e-02 5.780e-02 2.028e-01
+  1.704e-01 0.000e+00 0.000e+00]
+ [1.318e-01 7.100e-02 5.560e-02 1.138e-01 1.420e-02 7.240e-02 2.740e-02
+  1.304e-01 8.680e-02 0.000e+00]
+ [5.880e-02 5.660e-02 3.740e-02 1.860e-02 0.000e+00 4.780e-02 2.600e-02
+  1.650e-01 1.574e-01 1.634e-01]
+ [5.240e-02 1.492e-01 3.600e-03 2.080e-02 1.800e-03 0.000e+00 6.300e-02
+  2.200e-03 1.800e-03 2.220e-02]
+ [5.580e-02 5.320e-02 1.540e-02 6.600e-03 2.600e-03 4.460e-02 1.668e-01
+  4.720e-02 1.770e-01 6.900e-02]
+ [1.020e-01 3.800e-03 4.200e-03 1.902e-01 5.400e-03 1.600e-03 9.860e-02
+  4.400e-03 1.926e-01 2.930e-01]
+ [3.120e-02 1.672e-01 7.960e-02 2.140e-02 1.510e-01 2.400e-03 8.300e-02
+  4.000e-04 4.800e-03 1.860e-02]]
+INFO:root:Initializing nets
+INFO:root:Retrain? : True
+INFO:root:Training network 0. n_training: 1432
+INFO:root:Training network 0
+INFO:root:n_training: 23
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.14874301675977653
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 2.209602
+INFO:root:Epoch: 1 Loss: 2.006323
+INFO:root:Epoch: 2 Loss: 1.897345
+INFO:root:Epoch: 3 Loss: 1.856889
+INFO:root:Epoch: 4 Loss: 1.827978
+INFO:root:Epoch: 5 Loss: 1.807512
+INFO:root:Epoch: 6 Loss: 1.784459
+INFO:root:Epoch: 7 Loss: 1.719292
+INFO:root:Epoch: 8 Loss: 1.686565
+INFO:root:Epoch: 9 Loss: 1.661828
+INFO:root:Epoch: 10 Loss: 1.623945
+INFO:root:Epoch: 11 Loss: 1.625429
+INFO:root:Epoch: 12 Loss: 1.635239
+INFO:root:Epoch: 13 Loss: 1.607910
+INFO:root:Epoch: 14 Loss: 1.613741
+INFO:root:Epoch: 15 Loss: 1.636758
+INFO:root:Epoch: 16 Loss: 1.657411
+INFO:root:Epoch: 17 Loss: 1.600212
+INFO:root:Epoch: 18 Loss: 1.596636
+INFO:root:Epoch: 19 Loss: 1.530559
+INFO:root:>> Training accuracy: 0.475559
+INFO:root:>> Test accuracy: 0.217800
+INFO:root: ** Training complete **
+INFO:root:saving local model-0
+INFO:root:Training network 1. n_training: 3331
+INFO:root:Training network 1
+INFO:root:n_training: 53
+INFO:root:n_test: 313
+INFO:root:>> Pre-Training Training accuracy: 0.0
+INFO:root:>> Pre-Training Test accuracy: 0.1
+INFO:root:Epoch: 0 Loss: 1.753298
+INFO:root:Epoch: 1 Loss: 1.220914
+INFO:root:Epoch: 2 Loss: 1.187661
+INFO:root:Epoch: 3 Loss: 1.177648
+INFO:root:Epoch: 4 Loss: 1.164894
+INFO:root:Epoch: 5 Loss: 1.130714
+INFO:root:Epoch: 6 Loss: 1.096133
+INFO:root:Epoch: 7 Loss: 1.071324
+INFO:root:Epoch: 8 Loss: 1.080927
+INFO:root:Epoch: 9 Loss: 1.097667
+INFO:root:Epoch: 10 Loss: 1.028847
+INFO:root:Epoch: 11 Loss: 1.030086
+INFO:root:Epoch: 12 Loss: 0.984186
+INFO:root:Epoch: 13 Loss: 0.984321
+INFO:root:Epoch: 14 Loss: 0.960313
+INFO:root:Epoch: 15 Loss: 0.947025
+INFO:root:Epoch: 16 Loss: 0.917605
+INFO:root:Epoch: 17 Loss: 0.906016
+INFO:root:Epoch: 18 Loss: 0.959597
+INFO:root:Epoch: 19 Loss: 0.895838
+INFO:root:>> Training accuracy: 0.681177
+INFO:root:>> Test accuracy: 0.176800
+INFO:root: ** Training complete **
+INFO:root:saving local model-1
+INFO:root:Training network 2. n_training: 2058
+INFO:root:Training network 2
+INFO:root:n_training: 33
+INFO:root:n_test: 313
